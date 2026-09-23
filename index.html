@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BDigital Tech — The Operating System for Modern Business</title>
+  <meta name="description" content="BDigital Tech designs and builds connected software that keeps every part of your business moving in sync — one engineered operating backbone instead of nineteen disconnected tools.">
+  <meta name="theme-color" content="#02040A">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BDigital Tech — The Operating System for Modern Business">
+  <meta property="og:description" content="From CRM to payroll, healthcare to logistics, BDigital Tech builds connected software that keeps every part of your business moving in sync.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2302040A'/%3E%3Crect x='6' y='6' width='20' height='20' rx='6' fill='%234F5BFF'/%3E%3Ctext x='16' y='21' font-family='sans-serif' font-weight='800' font-size='14' fill='%23ffffff' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+
+  <!-- Typography: Plus Jakarta Sans via Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Vendor Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+</head>
+<body class="galaxy-theme">
+
+  <!-- THREE.JS CINEMATIC REALISTIC EARTH & GALAXY UNIVERSE -->
+  <div id="webgl-canvas-container" aria-hidden="true"></div>
+
+  <!-- ATMOSPHERIC SUBTLE GRADIENT & FILM GRAIN -->
+  <div class="space-vignette" aria-hidden="true"></div>
+  <div class="film-grain" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       TOP BEZEL & CAPSULE NAVIGATION BAR
+       ========================================================================== -->
+  <header class="hud-header">
+    <div class="hud-nav-container">
+      
+      <!-- Brand Logo Left -->
+      <a href="#" class="hud-brand">
+        <div class="hud-logo-icon">
+          <!-- Diamond / Tech Spark Icon -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2L2 12l10 10 10-10L12 2zm0 4.5l5.5 5.5-5.5 5.5-5.5-5.5L12 6.5z"/>
+          </svg>
+        </div>
+        <div class="hud-brand-text">BDIGITAL <span>TECH</span></div>
+      </a>
+
+      <!-- Center Capsule Navigation Pill -->
+      <nav class="hud-capsule-nav" aria-label="Main Navigation">
+        <a href="#our-solution" class="capsule-link active">Services</a>
+        <a href="#the-problem" class="capsule-link">The Architecture</a>
+        <a href="#our-solution" class="capsule-link">Four Pillars</a>
+        <a href="#why-us" class="capsule-link">Why Us</a>
+        <a href="#process" class="capsule-link">Process</a>
+        <a href="#contact" class="capsule-link">Contact</a>
+      </nav>
+
+      <!-- Right HUD Controls -->
+      <div class="hud-nav-right">
+        <!-- Profile Avatar / Status Marker -->
+        <div class="hud-status-avatar" title="System Operator Active">
+          <span class="avatar-core"></span>
+        </div>
+
+        <!-- Primary CTA -->
+        <a href="#" class="btn-hud-whatsapp" data-wa-trigger data-wa-context="Header Capsule">
+          <span>Start on WhatsApp</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN CONTENT LAYER
+       ========================================================================== -->
+  <main class="content-layer">
+
+    <!-- HERO SECTION (CINEMATIC GALAXY & SERVICE ECOSYSTEM) -->
+    <section class="hero-cinematic-stage" id="hero">
+      
+      <!-- Hero Main Content Grid: Left Business Messaging + Right Service Ecosystem -->
+      <div class="hero-hud-body">
+        
+        <!-- Left Column: Clear Business Message & Conversion Actions -->
+        <div class="hero-messaging-col">
+          
+          <div class="system-status-pill">
+            <span>CONNECTED SOFTWARE</span>
+            <span class="status-bullet"></span>
+            <span class="status-state">FOR MODERN BUSINESS</span>
+          </div>
+
+          <h1 class="hero-display-title">
+            Your business,<br>
+            running as<br>
+            <span class="text-gradient-cyan">one system.</span>
+          </h1>
+
+          <p class="hero-mission-desc">
+            From CRM and payroll to healthcare and logistics, BDigital Tech builds connected software around the way your business actually works.
+          </p>
+
+          <div class="hero-action-row">
+            <a href="#" class="btn-solid-white" data-wa-trigger data-wa-context="Hero WhatsApp CTA">
+              <span>Start on WhatsApp ↗</span>
+            </a>
+            <a href="#our-solution" class="btn-translucent-outline">
+              <span>Explore Our Services +</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Clean Futuristic Service Ecosystem Around the Earth -->
+        <div class="hero-ecosystem-stage" aria-label="BDigital Tech Connected Service Ecosystem">
+          
+          <!-- Ambient Orbit Conduits SVG (Radiating from nodes to Earth center) -->
+          <svg class="ecosystem-conduits-svg" viewBox="0 0 760 620" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <!-- Concentric Subtle Orbit Track Rings -->
+            <ellipse cx="380" cy="310" rx="270" ry="210" stroke="rgba(43,232,217,0.12)" stroke-width="1" stroke-dasharray="4 6" class="eco-orbit-ring" />
+            <ellipse cx="380" cy="310" rx="340" ry="260" stroke="rgba(79,91,255,0.08)" stroke-width="1" stroke-dasharray="2 5" class="eco-orbit-ring-outer" />
+            
+            <!-- Connection Conduits from Nodes to Earth Center (380, 310) -->
+            <path id="conduit-erp" class="eco-conduit" d="M 180 120 Q 260 210, 380 310" stroke="rgba(43,232,217,0.22)" stroke-width="1.2" stroke-dasharray="3 4" />
+            <path id="conduit-crm" class="eco-conduit" d="M 110 310 Q 240 310, 380 310" stroke="rgba(43,232,217,0.22)" stroke-width="1.2" stroke-dasharray="3 4" />
+            <path id="conduit-hrms" class="eco-conduit" d="M 180 490 Q 260 400, 380 310" stroke="rgba(43,232,217,0.22)" stroke-width="1.2" stroke-dasharray="3 4" />
+            <path id="conduit-web" class="eco-conduit" d="M 570 120 Q 490 200, 380 310" stroke="rgba(43,232,217,0.22)" stroke-width="1.2" stroke-dasharray="3 4" />
+            <path id="conduit-mobile" class="eco-conduit" d="M 640 310 Q 510 310, 380 310" stroke="rgba(43,232,217,0.22)" stroke-width="1.2" stroke-dasharray="3 4" />
+            <path id="conduit-automation" class="eco-conduit" d="M 570 490 Q 490 410, 380 310" stroke="rgba(43,232,217,0.22)" stroke-width="1.2" stroke-dasharray="3 4" />
+
+            <!-- Central Anchor Point on Earth -->
+            <circle cx="380" cy="310" r="6" fill="rgba(43,232,217,0.2)" stroke="#2BE8D9" stroke-width="1.2" class="eco-center-anchor" />
+            <circle cx="380" cy="310" r="2.5" fill="#2BE8D9" />
+          </svg>
+
+          <!-- 01 ERP Floating Module -->
+          <a href="#our-solution" data-select-service="erp" class="service-node node-erp" data-conduit="conduit-erp" aria-label="ERP Solutions">
+            <div class="node-indicator"><span class="indicator-dot"></span></div>
+            <div class="node-icon-wrap">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                <polyline points="2 17 12 22 22 17"/>
+                <polyline points="2 12 12 17 22 12"/>
+              </svg>
+            </div>
+            <div class="node-content">
+              <span class="node-title">ERP</span>
+              <span class="node-sub">Business Operations</span>
+            </div>
+          </a>
+
+          <!-- 02 CRM Floating Module -->
+          <a href="#our-solution" data-select-service="crm" class="service-node node-crm" data-conduit="conduit-crm" aria-label="CRM & WhatsApp">
+            <div class="node-indicator"><span class="indicator-dot"></span></div>
+            <div class="node-icon-wrap">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <div class="node-content">
+              <span class="node-title">CRM</span>
+              <span class="node-sub">Customer Management</span>
+            </div>
+          </a>
+
+          <!-- 03 HRMS Floating Module -->
+          <a href="#our-solution" data-select-service="hrms" class="service-node node-hrms" data-conduit="conduit-hrms" aria-label="HRMS Platform">
+            <div class="node-indicator"><span class="indicator-dot"></span></div>
+            <div class="node-icon-wrap">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+              </svg>
+            </div>
+            <div class="node-content">
+              <span class="node-title">HRMS</span>
+              <span class="node-sub">People &amp; Workforce</span>
+            </div>
+          </a>
+
+          <!-- 04 Web Applications Floating Module -->
+          <a href="#our-solution" data-select-service="web-applications" class="service-node node-web" data-conduit="conduit-web" aria-label="Web Applications">
+            <div class="node-indicator"><span class="indicator-dot"></span></div>
+            <div class="node-icon-wrap">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <div class="node-content">
+              <span class="node-title">Web Applications</span>
+              <span class="node-sub">Digital Platforms</span>
+            </div>
+          </a>
+
+          <!-- 05 Mobile Apps Floating Module -->
+          <a href="#our-solution" data-select-service="mobile-apps" class="service-node node-mobile" data-conduit="conduit-mobile" aria-label="Mobile Applications">
+            <div class="node-indicator"><span class="indicator-dot"></span></div>
+            <div class="node-icon-wrap">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                <line x1="12" y1="18" x2="12.01" y2="18"/>
+              </svg>
+            </div>
+            <div class="node-content">
+              <span class="node-title">Mobile Apps</span>
+              <span class="node-sub">iOS &amp; Android</span>
+            </div>
+          </a>
+
+          <!-- 06 Automation Floating Module -->
+          <a href="#our-solution" data-select-service="workflow-automation" class="service-node node-automation" data-conduit="conduit-automation" aria-label="Workflow Automation & Analytics">
+            <div class="node-indicator"><span class="indicator-dot"></span></div>
+            <div class="node-icon-wrap">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="18" cy="5" r="3"/>
+                <circle cx="6" cy="12" r="3"/>
+                <circle cx="18" cy="19" r="3"/>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+              </svg>
+            </div>
+            <div class="node-content">
+              <span class="node-title">Automation</span>
+              <span class="node-sub">Workflows &amp; Analytics</span>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CAPABILITY TICKER (INTEGRATED SPACE STRIP) -->
+    <section class="capability-ticker-section" aria-label="System Capabilities">
+      <div class="capability-ticker-track">
+        <span class="capability-item">Analytics BI</span>
+        <span class="capability-separator-dot"></span>
+        <span class="capability-item">Mobile Applications</span>
+        <span class="capability-separator-dot"></span>
+        <span class="capability-item">Web Applications</span>
+        <span class="capability-separator-dot"></span>
+        <span class="capability-item">ERP</span>
+        <span class="capability-separator-dot"></span>
+        <span class="capability-item">HRMS</span>
+        <span class="capability-separator-dot"></span>
+        <span class="capability-item">Payroll</span>
+        <span class="capability-separator-dot"></span>
+        <span class="capability-item">Attendance</span>
+        <span class="capability-separator-dot"></span>
+        <span class="capability-item">Accounting</span>
+        <span class="capability-separator-dot"></span>
+        <span class="capability-item">CRM</span>
+        <span class="capability-separator-dot"></span>
+        <!-- Continuous loop duplicates -->
+        <span class="capability-item">Analytics BI</span>
+        <span class="capability-separator-dot"></span>
+        <span class="capability-item">Mobile Applications</span>
+        <span class="capability-separator-dot"></span>
+        <span class="capability-item">Web Applications</span>
+        <span class="capability-separator-dot"></span>
+        <span class="capability-item">ERP</span>
+        <span class="capability-separator-dot"></span>
+        <span class="capability-item">HRMS</span>
+        <span class="capability-separator-dot"></span>
+        <span class="capability-item">Payroll</span>
+        <span class="capability-separator-dot"></span>
+        <span class="capability-item">Attendance</span>
+        <span class="capability-separator-dot"></span>
+        <span class="capability-item">Accounting</span>
+        <span class="capability-separator-dot"></span>
+        <span class="capability-item">CRM</span>
+        <span class="capability-separator-dot"></span>
+      </div>
+    </section>
+
+    <!-- SECTION 01 — THE PROBLEM (DISCONNECTED -> ONE SYSTEM DIAGRAM) -->
+    <section class="section-layout" id="the-problem">
+      <div class="section-container split-layout">
+        
+        <!-- Left: Statement -->
+        <div class="split-col-left">
+          <div class="section-tag">01 / THE PROBLEM</div>
+          <h2 class="section-heading">
+            Disconnected tools<br>
+            create blind spots.
+          </h2>
+          <p class="section-description">
+            We replace disjointed software subscriptions <span class="highlight-cyan">with one living operating backbone.</span>
+          </p>
+          <a href="#our-solution" class="link-learn-more">
+            <span>Learn More</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Right: Architectural Data-Flow Diagram -->
+        <div class="split-col-right">
+          <div class="dataflow-diagram-wrapper">
+            
+            <!-- Left Disconnected Sources -->
+            <div class="diagram-input-column">
+              <div class="input-card">CRM</div>
+              <div class="input-card">Excel</div>
+              <div class="input-card">HR Tool</div>
+            </div>
+
+            <!-- Center SVG Conduit Harness -->
+            <div class="diagram-svg-stage">
+              <svg class="conduit-svg" viewBox="0 0 460 260" fill="none" preserveAspectRatio="none">
+                <!-- Inputs to Center Bundle -->
+                <path d="M 0 50 C 70 50, 80 130, 140 130" stroke="rgba(91,124,255,0.4)" stroke-width="1.5" stroke-dasharray="4 3" />
+                <path d="M 0 130 C 60 130, 90 130, 140 130" stroke="rgba(91,124,255,0.4)" stroke-width="1.5" stroke-dasharray="4 3" />
+                <path d="M 0 210 C 70 210, 80 130, 140 130" stroke="rgba(91,124,255,0.4)" stroke-width="1.5" stroke-dasharray="4 3" />
+                
+                <!-- Convergent fiber lines -->
+                <path d="M 140 130 Q 155 120, 170 130" stroke="#5B7CFF" stroke-width="2" />
+                <path d="M 140 130 Q 155 140, 170 130" stroke="#35D6E8" stroke-width="1.5" />
+                
+                <!-- Center to Right 6 Outputs -->
+                <path d="M 290 130 C 340 130, 360 25, 460 25" stroke="rgba(53,214,232,0.6)" stroke-width="1.5" />
+                <path d="M 290 130 C 340 130, 370 65, 460 65" stroke="rgba(53,214,232,0.6)" stroke-width="1.5" />
+                <path d="M 290 130 C 350 130, 380 105, 460 105" stroke="rgba(53,214,232,0.6)" stroke-width="1.5" />
+                <path d="M 290 130 C 350 130, 380 155, 460 155" stroke="rgba(53,214,232,0.6)" stroke-width="1.5" />
+                <path d="M 290 130 C 340 130, 370 195, 460 195" stroke="rgba(53,214,232,0.6)" stroke-width="1.5" />
+                <path d="M 290 130 C 340 130, 360 235, 460 235" stroke="rgba(53,214,232,0.6)" stroke-width="1.5" />
+
+                <!-- Pulse Point -->
+                <circle cx="215" cy="130" r="3" fill="#35D6E8" class="pulse-point" />
+              </svg>
+
+              <!-- Center Glowing Card -->
+              <div class="center-hub-card">
+                <div class="hub-logo-box">B</div>
+                <div class="hub-title">One System.</div>
+                <div class="hub-sub">Full Visibility.</div>
+              </div>
+            </div>
+
+            <!-- Right 6 Connected Outputs -->
+            <div class="diagram-output-column">
+              <div class="output-pill">ERP</div>
+              <div class="output-pill">HRMS</div>
+              <div class="output-pill">Payroll</div>
+              <div class="output-pill">Attendance</div>
+              <div class="output-pill">Accounting</div>
+              <div class="output-pill">Analytics</div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 02 — FOUR PILLARS & 19 SERVICES SHOWCASE -->
+    <section class="section-layout services-showcase-section" id="our-solution">
+      <div class="section-container">
+        
+        <!-- Section Header -->
+        <div class="section-header-split">
+          <div class="header-split-left">
+            <div class="section-tag">02 / FOUR PILLARS &amp; 19 SERVICES</div>
+            <h2 class="section-heading">
+              One engineered system<br>
+              across four pillars.
+            </h2>
+          </div>
+          <div class="header-split-right">
+            <p class="section-description-inline">
+              From core operational backbones to custom digital platforms, explore the 19 connected services that run your daily business operations.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pillar Selector Tabs Bar -->
+        <div class="pillar-tabs-bar" id="pillar-tabs-container" role="tablist" aria-label="Service Pillars">
+          <!-- Rendered dynamically by js/services-ui.js -->
+        </div>
+
+        <!-- Active Pillar Banner -->
+        <div class="pillar-overview-banner">
+          <div class="pillar-banner-meta">
+            <span class="pillar-badge-indicator" id="pillar-badge-text">PILLAR 01 // CORE OPERATIONS</span>
+            <h3 class="pillar-active-title" id="pillar-active-name">Business Operations Suite</h3>
+          </div>
+          <p class="pillar-active-desc" id="pillar-active-tagline">
+            The operational backbone that keeps people, processes, finance, and daily business activities connected.
+          </p>
+        </div>
+
+        <!-- Interactive Split Services Stage -->
+        <div class="services-showcase-grid">
+          
+          <!-- Left: Services Selector Pane -->
+          <div class="services-selector-pane">
+            <div class="pane-header-row">
+              <span class="pane-header-title">SELECT SERVICE</span>
+              <span class="pane-header-status">
+                <span class="status-pulse-dot"></span>
+                <span>SYNCED</span>
+              </span>
+            </div>
+            <div class="services-scroll-list" id="pillar-services-list" role="list">
+              <!-- Rendered dynamically by js/services-ui.js -->
+            </div>
+          </div>
+
+          <!-- Right: Active Service HUD Console -->
+          <div class="active-service-console-pane">
+            <div class="service-hud-console" id="service-hud-console">
+              
+              <!-- Console Top Telemetry Bar -->
+              <div class="console-telemetry-bar">
+                <span class="hud-console-tag" id="hud-service-tag">SERVICE 01 // BUSINESS OPERATIONS</span>
+                <span class="hud-console-status">
+                  <span class="status-pulse-dot"></span>
+                  <span>ACTIVE SPECIFICATION</span>
+                </span>
+              </div>
+
+              <!-- Console Title & Short Description Quote -->
+              <div class="console-title-block">
+                <h3 class="hud-service-title" id="hud-service-title">Enterprise Resource Planning</h3>
+                <div class="hud-service-quote" id="hud-service-short-desc">
+                  “Connect inventory, finance, procurement, operations, and business workflows in one unified system.”
+                </div>
+              </div>
+
+              <!-- About The Service -->
+              <div class="console-info-block">
+                <div class="hud-section-label">ABOUT THE SERVICE</div>
+                <p class="hud-service-info-text" id="hud-service-info">
+                  ERP brings the core functions of a business into one connected platform. Instead of managing operations across disconnected tools and spreadsheets, businesses can manage their essential workflows from a single system.
+                </p>
+              </div>
+
+              <!-- Key Capabilities Grid -->
+              <div class="console-capabilities-block">
+                <div class="hud-section-label">KEY CAPABILITIES</div>
+                <div class="hud-capabilities-grid" id="hud-capabilities-list">
+                  <!-- Rendered dynamically by js/services-ui.js -->
+                </div>
+              </div>
+
+              <!-- Ideal For Box -->
+              <div class="hud-ideal-box">
+                <div class="ideal-box-label">IDEAL FOR</div>
+                <div class="ideal-box-text" id="hud-service-ideal-for">
+                  Growing businesses that need their departments and operations working from one connected system.
+                </div>
+              </div>
+
+              <!-- Console Action Row -->
+              <div class="hud-console-action-row">
+                <a href="#" id="hud-service-wa-btn" class="btn-service-whatsapp" data-wa-trigger>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.761.82 2.796.82 3.183 0 5.768-2.587 5.769-5.766.001-3.182-2.585-5.766-5.769-5.766zm9.969 5.768c0 5.503-4.469 9.97-9.97 9.97-1.748 0-3.376-.453-4.81-1.242L2 22l1.341-4.896C2.52 15.65 2.031 13.9 2.031 11.94c0-5.503 4.47-9.97 9.97-9.97 5.501 0 9.969 4.467 9.969 9.97z"/>
+                  </svg>
+                  <span class="wa-btn-label">Discuss ERP on WhatsApp</span>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+                  </svg>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 03 — WHY CHOOSE BDIGITAL TECH (3 CARDS) -->
+    <section class="section-layout" id="why-us">
+      <div class="section-container">
+        
+        <!-- Split Header -->
+        <div class="section-header-split">
+          <div class="header-split-left">
+            <div class="section-tag">03 / WHY CHOOSE BDIGITAL TECH</div>
+            <h2 class="section-heading">
+              Built for the way<br>
+              your business works.
+            </h2>
+          </div>
+          <div class="header-split-right">
+            <p class="section-description-inline">
+              We don't force your business into generic software. We design connected digital systems around your workflows, your teams, and the way you operate.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3 Precision Cards Grid -->
+        <div class="precision-cards-grid">
+          
+          <!-- Card 01: CONNECT -->
+          <div class="precision-feature-card">
+            <div class="card-hairline-glow"></div>
+
+            <!-- Mini Futuristic Visual: Connected System -->
+            <div class="card-mini-viz-wrap" aria-hidden="true">
+              <svg viewBox="0 0 320 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background ambient glow -->
+                <circle cx="160" cy="37" r="28" fill="url(#core-radial-glow)" opacity="0.35"/>
+                
+                <!-- Conduit Connection Lines -->
+                <path d="M 68 22 L 140 33" stroke="rgba(255,255,255,0.12)" stroke-width="1.2"/>
+                <path d="M 72 52 L 140 41" stroke="rgba(255,255,255,0.12)" stroke-width="1.2"/>
+                <path d="M 252 22 L 180 33" stroke="rgba(255,255,255,0.12)" stroke-width="1.2"/>
+                <path d="M 248 52 L 180 41" stroke="rgba(255,255,255,0.12)" stroke-width="1.2"/>
+
+                <!-- Animated Data-Flow Pulses -->
+                <path d="M 68 22 L 140 33" stroke="#2BE8D9" stroke-width="1.5" stroke-dasharray="4 8" class="data-pulse-line"/>
+                <path d="M 72 52 L 140 41" stroke="#2BE8D9" stroke-width="1.5" stroke-dasharray="4 8" class="data-pulse-line-delay"/>
+                <path d="M 252 22 L 180 33" stroke="#2BE8D9" stroke-width="1.5" stroke-dasharray="4 8" class="data-pulse-line"/>
+                <path d="M 248 52 L 180 41" stroke="#2BE8D9" stroke-width="1.5" stroke-dasharray="4 8" class="data-pulse-line-delay"/>
+
+                <!-- Node: CRM -->
+                <rect x="22" y="13" width="46" height="18" rx="9" fill="#0D1222" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
+                <circle cx="31" cy="22" r="2.5" fill="#4F5BFF"/>
+                <text x="49" y="25" fill="#B0B9D0" font-size="8.5" font-family="'JetBrains Mono', monospace" font-weight="600" text-anchor="middle">CRM</text>
+
+                <!-- Node: ERP -->
+                <rect x="26" y="43" width="46" height="18" rx="9" fill="#0D1222" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
+                <circle cx="35" cy="52" r="2.5" fill="#4F5BFF"/>
+                <text x="53" y="55" fill="#B0B9D0" font-size="8.5" font-family="'JetBrains Mono', monospace" font-weight="600" text-anchor="middle">ERP</text>
+
+                <!-- Node: HRMS -->
+                <rect x="248" y="13" width="50" height="18" rx="9" fill="#0D1222" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
+                <circle cx="257" cy="22" r="2.5" fill="#4F5BFF"/>
+                <text x="277" y="25" fill="#B0B9D0" font-size="8.5" font-family="'JetBrains Mono', monospace" font-weight="600" text-anchor="middle">HRMS</text>
+
+                <!-- Node: Analytics -->
+                <rect x="238" y="43" width="60" height="18" rx="9" fill="#0D1222" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
+                <circle cx="247" cy="52" r="2.5" fill="#4F5BFF"/>
+                <text x="274" y="55" fill="#B0B9D0" font-size="7.5" font-family="'JetBrains Mono', monospace" font-weight="600" text-anchor="middle">ANALYTICS</text>
+
+                <!-- Central Glowing Core -->
+                <circle cx="160" cy="37" r="16" stroke="rgba(43,232,217,0.3)" stroke-width="1" stroke-dasharray="2 2" class="spin-slow-ring"/>
+                <circle cx="160" cy="37" r="11" fill="#0B101D" stroke="#2BE8D9" stroke-width="1.4"/>
+                <circle cx="160" cy="37" r="4.5" fill="#2BE8D9" class="pulse-core-dot"/>
+                <text x="160" y="65" fill="#2BE8D9" font-size="7" font-family="'JetBrains Mono', monospace" font-weight="700" letter-spacing="0.08em" text-anchor="middle">CORE SYSTEM</text>
+
+                <defs>
+                  <radialGradient id="core-radial-glow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#2BE8D9" stop-opacity="0.8"/>
+                    <stop offset="100%" stop-color="#2BE8D9" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+              </svg>
+            </div>
+
+            <div class="card-top-row">
+              <span class="card-story-tag">CONNECT</span>
+              <div class="card-step-num">01</div>
+            </div>
+            <h3 class="precision-card-title">Everything Works Together</h3>
+            <p class="precision-card-desc">
+              Connect your operations, customers, teams, and data in one connected business system.
+            </p>
+          </div>
+
+          <!-- Card 02: CUSTOMIZE -->
+          <div class="precision-feature-card">
+            <div class="card-hairline-glow"></div>
+
+            <!-- Mini Futuristic Visual: Custom Architecture Blueprint -->
+            <div class="card-mini-viz-wrap" aria-hidden="true">
+              <svg viewBox="0 0 320 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Blueprint Grid Lines -->
+                <line x1="10" y1="37" x2="310" y2="37" stroke="rgba(255,255,255,0.06)" stroke-dasharray="3 3"/>
+                
+                <!-- Connector: Business to Workflows -->
+                <path d="M 88 37 L 118 37" stroke="rgba(255,255,255,0.18)" stroke-width="1.2"/>
+                <polygon points="118,37 112,34 112,40" fill="rgba(255,255,255,0.3)"/>
+                <path d="M 88 37 L 118 37" stroke="#4F5BFF" stroke-width="1.5" stroke-dasharray="3 6" class="data-pulse-line"/>
+
+                <!-- Connector: Workflows to Custom Software -->
+                <path d="M 198 37 L 228 37" stroke="rgba(255,255,255,0.18)" stroke-width="1.2"/>
+                <polygon points="228,37 222,34 222,40" fill="#2BE8D9"/>
+                <path d="M 198 37 L 228 37" stroke="#2BE8D9" stroke-width="1.5" stroke-dasharray="3 6" class="data-pulse-line-delay"/>
+
+                <!-- Block 01: Business -->
+                <rect x="14" y="24" width="74" height="26" rx="6" fill="#0D1222" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                <circle cx="25" cy="37" r="2.5" fill="#8A95A5"/>
+                <text x="54" y="40" fill="#C5CCE0" font-size="8" font-family="'JetBrains Mono', monospace" font-weight="600" text-anchor="middle">BUSINESS</text>
+
+                <!-- Block 02: Workflows -->
+                <rect x="118" y="22" width="80" height="30" rx="6" fill="#0F1528" stroke="rgba(79, 91, 255, 0.45)" stroke-width="1.2"/>
+                <circle cx="130" cy="37" r="2.5" fill="#4F5BFF" class="pulse-blue-dot"/>
+                <text x="162" y="40" fill="#939AFF" font-size="8" font-family="'JetBrains Mono', monospace" font-weight="600" text-anchor="middle">WORKFLOWS</text>
+
+                <!-- Block 03: Custom Software (Target Glowing Result) -->
+                <rect x="228" y="19" width="80" height="36" rx="6" fill="rgba(43,232,217,0.06)" stroke="#2BE8D9" stroke-width="1.3"/>
+                <circle cx="240" cy="37" r="3.5" fill="#2BE8D9" class="pulse-core-dot"/>
+                <text x="274" y="34" fill="#2BE8D9" font-size="8" font-family="'JetBrains Mono', monospace" font-weight="700" text-anchor="middle">CUSTOM</text>
+                <text x="274" y="46" fill="#FFFFFF" font-size="7.5" font-family="'JetBrains Mono', monospace" font-weight="600" text-anchor="middle">SOFTWARE</text>
+
+                <!-- Flow Sub-label -->
+                <text x="160" y="66" fill="#687184" font-size="6.5" font-family="'JetBrains Mono', monospace" letter-spacing="0.08em" text-anchor="middle">YOUR WORKFLOW → YOUR SYSTEM</text>
+              </svg>
+            </div>
+
+            <div class="card-top-row">
+              <span class="card-story-tag">CUSTOMIZE</span>
+              <div class="card-step-num">02</div>
+            </div>
+            <h3 class="precision-card-title">Built Around Your Business</h3>
+            <p class="precision-card-desc">
+              We build around your actual workflows instead of forcing your business into a generic software template.
+            </p>
+          </div>
+
+          <!-- Card 03: SCALE -->
+          <div class="precision-feature-card">
+            <div class="card-hairline-glow"></div>
+
+            <!-- Mini Futuristic Visual: Scalable System Expansion -->
+            <div class="card-mini-viz-wrap" aria-hidden="true">
+              <svg viewBox="0 0 320 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Stage 1 to 2 Conduit -->
+                <path d="M 58 37 L 122 37" stroke="rgba(255,255,255,0.14)" stroke-width="1.2"/>
+                <path d="M 58 37 L 122 37" stroke="#4F5BFF" stroke-width="1.5" stroke-dasharray="3 6" class="data-pulse-line"/>
+
+                <!-- Stage 2 to 3 Conduit -->
+                <path d="M 174 37 L 236 37" stroke="rgba(255,255,255,0.14)" stroke-width="1.2"/>
+                <path d="M 174 37 L 236 37" stroke="#2BE8D9" stroke-width="1.5" stroke-dasharray="3 6" class="data-pulse-line-delay"/>
+
+                <!-- Stage 01: START (Single Node) -->
+                <g>
+                  <text x="42" y="19" fill="#687184" font-size="7.5" font-family="'JetBrains Mono', monospace" font-weight="600" text-anchor="middle">01</text>
+                  <circle cx="42" cy="37" r="8" fill="#0D1222" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                  <circle cx="42" cy="37" r="2.5" fill="#8A95A5"/>
+                  <text x="42" y="58" fill="#8A95A5" font-size="7.5" font-family="'JetBrains Mono', monospace" font-weight="600" text-anchor="middle">START</text>
+                </g>
+
+                <!-- Stage 02: GROW (Multi-node Cluster) -->
+                <g>
+                  <text x="148" y="16" fill="#4F5BFF" font-size="7.5" font-family="'JetBrains Mono', monospace" font-weight="600" text-anchor="middle">10+</text>
+                  <!-- Cluster links -->
+                  <line x1="148" y1="37" x2="138" y2="26" stroke="rgba(79, 91, 255, 0.4)" stroke-width="1"/>
+                  <line x1="148" y1="37" x2="158" y2="48" stroke="rgba(79, 91, 255, 0.4)" stroke-width="1"/>
+                  
+                  <circle cx="138" cy="26" r="3.5" fill="#0D1222" stroke="#4F5BFF" stroke-width="1"/>
+                  <circle cx="158" cy="48" r="3.5" fill="#0D1222" stroke="#4F5BFF" stroke-width="1"/>
+                  <circle cx="148" cy="37" r="9" fill="#0F1528" stroke="#4F5BFF" stroke-width="1.2"/>
+                  <circle cx="148" cy="37" r="3" fill="#4F5BFF" class="pulse-blue-dot"/>
+                  <text x="148" y="62" fill="#939AFF" font-size="7.5" font-family="'JetBrains Mono', monospace" font-weight="600" text-anchor="middle">GROW</text>
+                </g>
+
+                <!-- Stage 03: SCALE (Infinite Dynamic Network) -->
+                <g>
+                  <text x="268" y="15" fill="#2BE8D9" font-size="11" font-family="'JetBrains Mono', monospace" font-weight="700" text-anchor="middle">∞</text>
+                  
+                  <!-- Pulsing scale orbital wave -->
+                  <circle cx="268" cy="37" r="16" stroke="rgba(43,232,217,0.3)" stroke-width="1" class="scale-pulse-wave"/>
+                  <circle cx="268" cy="37" r="22" stroke="rgba(43,232,217,0.15)" stroke-width="0.8" class="scale-pulse-wave-outer"/>
+
+                  <!-- Outer constellation nodes -->
+                  <circle cx="250" cy="26" r="3" fill="#0B101D" stroke="#2BE8D9" stroke-width="1"/>
+                  <circle cx="286" cy="26" r="3" fill="#0B101D" stroke="#2BE8D9" stroke-width="1"/>
+                  <circle cx="250" cy="48" r="3" fill="#0B101D" stroke="#2BE8D9" stroke-width="1"/>
+                  <circle cx="286" cy="48" r="3" fill="#0B101D" stroke="#2BE8D9" stroke-width="1"/>
+                  
+                  <!-- Central Scaled Core -->
+                  <circle cx="268" cy="37" r="10" fill="#0B101D" stroke="#2BE8D9" stroke-width="1.4"/>
+                  <circle cx="268" cy="37" r="4" fill="#2BE8D9" class="pulse-core-dot"/>
+                  <text x="268" y="66" fill="#2BE8D9" font-size="8" font-family="'JetBrains Mono', monospace" font-weight="700" text-anchor="middle">SCALE</text>
+                </g>
+              </svg>
+            </div>
+
+            <div class="card-top-row">
+              <span class="card-story-tag">SCALE</span>
+              <div class="card-step-num">03</div>
+            </div>
+            <h3 class="precision-card-title">Ready to Grow With You</h3>
+            <p class="precision-card-desc">
+              Build a reliable digital foundation that can scale as your users, data, and business grow.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 04 — PROCESS (HORIZONTAL 5-PHASE TIMELINE) -->
+    <section class="section-layout" id="process">
+      <div class="section-container">
+        
+        <!-- Split Header -->
+        <div class="section-header-split">
+          <div class="header-split-left">
+            <div class="section-tag">04 / OUR PROCESS</div>
+            <h2 class="section-heading">
+              From blueprint<br>
+              to business impact
+            </h2>
+          </div>
+          <div class="header-split-right">
+            <p class="section-description-inline">
+              A rigorous five-phase journey designed to ensure zero operational downtime.
+            </p>
+            <a href="#" class="btn-outline-pill" data-wa-trigger data-wa-context="See Our Process">
+              <span>See Our Process</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Horizontal Process Timeline Track -->
+        <div class="horizontal-timeline-track">
+          
+          <div class="horizontal-conduit-line">
+            <div class="horizontal-conduit-progress"></div>
+          </div>
+
+          <div class="horizontal-steps-grid">
+            
+            <div class="h-step-item active">
+              <div class="h-step-node">
+                <span class="node-circle-num">01</span>
+              </div>
+              <div class="h-step-content">
+                <div class="h-step-name-row">
+                  <span class="h-step-number">01</span>
+                  <span class="h-step-title">Discover</span>
+                </div>
+                <p class="h-step-desc">Understand your goals, workflows and challenges.</p>
+              </div>
+            </div>
+
+            <div class="h-step-item">
+              <div class="h-step-node">
+                <span class="node-circle-num">02</span>
+              </div>
+              <div class="h-step-content">
+                <div class="h-step-name-row">
+                  <span class="h-step-number">02</span>
+                  <span class="h-step-title">Design</span>
+                </div>
+                <p class="h-step-desc">Create tailored system architecture.</p>
+              </div>
+            </div>
+
+            <div class="h-step-item">
+              <div class="h-step-node">
+                <span class="node-circle-num">03</span>
+              </div>
+              <div class="h-step-content">
+                <div class="h-step-name-row">
+                  <span class="h-step-number">03</span>
+                  <span class="h-step-title">Build</span>
+                </div>
+                <p class="h-step-desc">Develop, test and iterate with your team.</p>
+              </div>
+            </div>
+
+            <div class="h-step-item">
+              <div class="h-step-node">
+                <span class="node-circle-num">04</span>
+              </div>
+              <div class="h-step-content">
+                <div class="h-step-name-row">
+                  <span class="h-step-number">04</span>
+                  <span class="h-step-title">Integrate</span>
+                </div>
+                <p class="h-step-desc">Migrate your data and connect your operations.</p>
+              </div>
+            </div>
+
+            <div class="h-step-item">
+              <div class="h-step-node">
+                <span class="node-circle-num">05</span>
+              </div>
+              <div class="h-step-content">
+                <div class="h-step-name-row">
+                  <span class="h-step-number">05</span>
+                  <span class="h-step-title">Scale</span>
+                </div>
+                <p class="h-step-desc">Optimize, support and grow together.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 05 — TRUSTED BY BUSINESSES (METRICS & LOGO STRIP) -->
+    <section class="section-layout" id="trusted">
+      <div class="section-container">
+        
+        <div class="section-header-split">
+          <div class="header-split-left">
+            <div class="section-tag">05 / TRUSTED BY BUSINESSES</div>
+            <h2 class="section-heading">
+              Growing businesses<br>
+              build with us.
+            </h2>
+            <p class="section-description-inline" style="margin-top: 14px;">
+              From startups to established enterprises, we help teams streamline operations and unlock growth.
+            </p>
+          </div>
+          
+          <div class="header-split-right">
+            <div class="trust-metrics-group">
+              <div class="trust-metric-col">
+                <div class="trust-metric-number" data-target="50" data-suffix="+">50+</div>
+                <div class="trust-metric-label">Businesses Empowered</div>
+              </div>
+              <div class="trust-metric-col">
+                <div class="trust-metric-number" data-target="99.9" data-suffix="%">99.9%</div>
+                <div class="trust-metric-label">System Reliability</div>
+              </div>
+              <div class="trust-metric-col">
+                <div class="trust-metric-number">4.8/5</div>
+                <div class="trust-metric-label">Client Satisfaction</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Client Logo Strip with Arrows -->
+        <div class="client-logo-carousel-wrapper">
+          <button class="carousel-nav-btn prev-btn" aria-label="Previous logos">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+
+          <div class="client-logo-track" id="logo-track">
+            <!-- 01: BDigital -->
+            <a href="https://bdigitaladvt.com/" target="_blank" rel="noopener noreferrer" class="client-logo-item" title="Visit BDigital">
+              <span class="client-brand-badge">BD</span>
+              <span class="client-brand-name">BDigital</span>
+              <svg class="client-external-icon" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+
+            <!-- 02: BECMPL -->
+            <a href="https://becmpl.com/" target="_blank" rel="noopener noreferrer" class="client-logo-item" title="Visit BECMPL">
+              <span class="client-brand-badge">BE</span>
+              <span class="client-brand-name">BECMPL</span>
+              <svg class="client-external-icon" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+
+            <!-- 03: Beanora -->
+            <a href="https://beanora.in/" target="_blank" rel="noopener noreferrer" class="client-logo-item" title="Visit Beanora">
+              <span class="client-brand-badge">BN</span>
+              <span class="client-brand-name">Beanora</span>
+              <svg class="client-external-icon" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+
+            <!-- 04: Belit -->
+            <a href="https://belitstore.com/" target="_blank" rel="noopener noreferrer" class="client-logo-item" title="Visit Belit">
+              <span class="client-brand-badge">BL</span>
+              <span class="client-brand-name">Belit</span>
+              <svg class="client-external-icon" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+
+            <!-- 05: Cosmoverse -->
+            <a href="https://cosmoversekayacare.com/" target="_blank" rel="noopener noreferrer" class="client-logo-item" title="Visit Cosmoverse">
+              <span class="client-brand-badge">CV</span>
+              <span class="client-brand-name">Cosmoverse</span>
+              <svg class="client-external-icon" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+
+            <!-- 06: Cosmoverse Attendance System -->
+            <a href="https://cas.cosmoversekayacare.com/admin" target="_blank" rel="noopener noreferrer" class="client-logo-item" title="Visit Cosmoverse Attendance System">
+              <span class="client-brand-badge">CA</span>
+              <span class="client-brand-name">Cosmoverse Attendance System</span>
+              <svg class="client-external-icon" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+
+            <!-- 07: Deltaa -->
+            <a href="https://deltaa.in/" target="_blank" rel="noopener noreferrer" class="client-logo-item" title="Visit Deltaa">
+              <span class="client-brand-badge">DL</span>
+              <span class="client-brand-name">Deltaa</span>
+              <svg class="client-external-icon" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+
+            <!-- 08: Disha Overseas -->
+            <a href="https://dishaoverseas.com/" target="_blank" rel="noopener noreferrer" class="client-logo-item" title="Visit Disha Overseas">
+              <span class="client-brand-badge">DO</span>
+              <span class="client-brand-name">Disha Overseas</span>
+              <svg class="client-external-icon" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+
+            <!-- 09: Rajarshree Industries -->
+            <a href="https://rajashreedemo.rudransh.cloud/" target="_blank" rel="noopener noreferrer" class="client-logo-item" title="Visit Rajarshree Industries">
+              <span class="client-brand-badge">RI</span>
+              <span class="client-brand-name">Rajarshree Industries</span>
+              <svg class="client-external-icon" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+
+            <!-- 10: Krivisha -->
+            <a href="http://krivisha.com/" target="_blank" rel="noopener noreferrer" class="client-logo-item" title="Visit Krivisha">
+              <span class="client-brand-badge">KR</span>
+              <span class="client-brand-name">Krivisha</span>
+              <svg class="client-external-icon" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+
+            <!-- 11: Super Coat -->
+            <a href="https://supercoat.rudransh.cloud/" target="_blank" rel="noopener noreferrer" class="client-logo-item" title="Visit Super Coat">
+              <span class="client-brand-badge">SC</span>
+              <span class="client-brand-name">Super Coat</span>
+              <svg class="client-external-icon" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+
+            <!-- 12: Super Seal -->
+            <a href="https://superseal.rudransh.cloud/" target="_blank" rel="noopener noreferrer" class="client-logo-item" title="Visit Super Seal">
+              <span class="client-brand-badge">SS</span>
+              <span class="client-brand-name">Super Seal</span>
+              <svg class="client-external-icon" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+
+            <!-- 13: Yogtech Batteries -->
+            <a href="https://yogtechbatteries.com/" target="_blank" rel="noopener noreferrer" class="client-logo-item" title="Visit Yogtech Batteries">
+              <span class="client-brand-badge">YB</span>
+              <span class="client-brand-name">Yogtech Batteries</span>
+              <svg class="client-external-icon" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+
+          <button class="carousel-nav-btn next-btn" aria-label="Next logos">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FINAL CTA SECTION (CURVED BLUE MESH ARC BANNER) -->
+    <section class="final-cta-section-wrapper" id="contact">
+      <div class="final-cta-card-banner">
+        
+        <div class="cta-curved-arc-bg" aria-hidden="true">
+          <svg viewBox="0 0 1200 240" fill="none" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="ctaArcGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#23345F" stop-opacity="0.1" />
+                <stop offset="40%" stop-color="#5B7CFF" stop-opacity="0.45" />
+                <stop offset="60%" stop-color="#35D6E8" stop-opacity="0.5" />
+                <stop offset="100%" stop-color="#23345F" stop-opacity="0.1" />
+              </linearGradient>
+            </defs>
+            <path d="M 0 240 Q 600 60, 1200 240 L 1200 240 L 0 240 Z" fill="url(#ctaArcGrad)" opacity="0.35" />
+            <path d="M 0 240 Q 600 80, 1200 240" stroke="#5B7CFF" stroke-width="2" opacity="0.65" />
+            <path d="M 0 240 Q 600 110, 1200 240" stroke="#35D6E8" stroke-width="1.2" opacity="0.45" />
+          </svg>
+        </div>
+
+        <div class="final-cta-content-row">
+          <div class="final-cta-left">
+            <h2 class="final-cta-title">Ready to unify your business?</h2>
+            <p class="final-cta-subhead">Let's build your connected future — starting with a conversation.</p>
+          </div>
+
+          <div class="final-cta-buttons">
+            <a href="#" class="btn-primary" data-wa-trigger data-wa-context="Final CTA Start WhatsApp">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.761.82 2.796.82 3.183 0 5.768-2.587 5.769-5.766.001-3.182-2.585-5.766-5.769-5.766zm9.969 5.768c0 5.503-4.469 9.97-9.97 9.97-1.748 0-3.376-.453-4.81-1.242L2 22l1.341-4.896C2.52 15.65 2.031 13.9 2.031 11.94c0-5.503 4.47-9.97 9.97-9.97 5.501 0 9.969 4.467 9.969 9.97z"/></svg>
+              <span>Start on WhatsApp</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+
+            <a href="#" class="btn-secondary" data-wa-trigger data-wa-context="Final CTA Book Demo">
+              <span>Book a Demo</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       SITE FOOTER (4 COLUMNS)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      
+      <div class="footer-main-grid">
+        
+        <!-- Column 1: Brand & Socials -->
+        <div class="footer-brand-col">
+          <div class="hud-brand" style="margin-bottom: 16px;">
+            <div class="hud-logo-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L2 12l10 10 10-10L12 2zm0 4.5l5.5 5.5-5.5 5.5-5.5-5.5L12 6.5z"/>
+              </svg>
+            </div>
+            <div class="hud-brand-text">BDIGITAL <span>TECH</span></div>
+          </div>
+          <p class="footer-brand-desc">
+            Building the digital backbone for modern businesses.
+          </p>
+
+          <div class="footer-social-row">
+            <a href="#" class="social-icon-box" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            </a>
+            <a href="#" class="social-icon-box" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-icon-box" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 21c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 3c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/></svg>
+            </a>
+            <a href="#" class="social-icon-box" aria-label="X / Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-links-col">
+          <div class="footer-col-title">Quick Links</div>
+          <ul class="footer-nav-list">
+            <li><a href="#the-problem">The Architecture</a></li>
+            <li><a href="#our-solution">Four Pillars</a></li>
+            <li><a href="#why-us">Why Us</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Solutions -->
+        <div class="footer-links-col">
+          <div class="footer-col-title">Solutions</div>
+          <ul class="footer-nav-list">
+            <li><a href="#our-solution" data-select-service="erp">ERP Solutions</a></li>
+            <li><a href="#our-solution" data-select-service="hrms">HRMS Platform</a></li>
+            <li><a href="#our-solution" data-select-service="payroll">Payroll Systems</a></li>
+            <li><a href="#our-solution" data-select-service="crm">CRM &amp; WhatsApp</a></li>
+            <li><a href="#our-solution" data-select-service="ecommerce">E-commerce</a></li>
+            <li><a href="#our-solution" data-select-service="healthcare">Industry Solutions</a></li>
+            <li><a href="#our-solution" data-select-service="saas-platforms">SaaS Platforms</a></li>
+            <li><a href="#our-solution" data-select-service="workflow-automation">Workflow Automation</a></li>
+            <li><a href="#our-solution" data-select-service="analytics">Analytics &amp; BI</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div class="footer-contact-col">
+          <div class="footer-col-title">Contact</div>
+          <ul class="footer-contact-list">
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>hello@bdigitaltech.com</span>
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+917709629488" class="footer-contact-link">+91 77096 29488</a>
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Pune, Maharashtra, India</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-sub-bar">
+        <div class="sub-bar-left">© 2026 BDigital Tech. All rights reserved.</div>
+        <div class="sub-bar-right footer-developed-by">
+          <span>Developed and Maintained by</span>
+          <a href="https://www.bdigitaladvt.com/" target="_blank" rel="noopener noreferrer" class="footer-dev-link">BDigital</a>
+          <span class="footer-dev-and"></span>
+          <a href="https://rudranshiinfotech.com/" target="_blank" rel="noopener noreferrer" class="footer-logo-link" title="Rudransh Infotech">
+            <img src="assets/rudransh-logo.png" alt="Rudransh Infotech" class="footer-dev-logo">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP UTILITY BUTTON (54PX) -->
+  <a id="floating-whatsapp" href="#" class="whatsapp-utility-btn" aria-label="Chat with us on WhatsApp" data-wa-trigger data-wa-context="Floating WhatsApp Button">
+    <svg viewBox="0 0 24 24">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.761.82 2.796.82 3.183 0 5.768-2.587 5.769-5.766.001-3.182-2.585-5.766-5.769-5.766zm9.969 5.768c0 5.503-4.469 9.97-9.97 9.97-1.748 0-3.376-.453-4.81-1.242L2 22l1.341-4.896C2.52 15.65 2.031 13.9 2.031 11.94c0-5.503 4.47-9.97 9.97-9.97 5.501 0 9.969 4.467 9.969 9.97z"/>
+    </svg>
+    <span class="whatsapp-tooltip">Chat with us</span>
+  </a>
+
+  <!-- Application Logic Scripts -->
+  <script src="js/scene.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/services-data.js"></script>
+  <script src="js/services-ui.js"></script>
+  <script src="js/whatsapp.js"></script>
+
+</body>
+</html>

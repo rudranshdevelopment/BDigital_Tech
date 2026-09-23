@@ -1,0 +1,62 @@
+/* ==========================================================================
+   BDigital Tech - Enterprise Design Tokens
+   The Operating System for Modern Business
+   ========================================================================== */
+
+:root {
+  /* Palette: Enterprise Architectural Graphite & Blue */
+  --bg-primary: #080A0F;
+  --bg-secondary: #0D1017;
+  --bg-surface: #11151D;
+  --bg-surface-elevated: #151A23;
+  --bg-glass: rgba(13, 16, 23, 0.85);
+
+  --border: rgba(255, 255, 255, 0.10);
+  --border-active: rgba(82, 130, 255, 0.45);
+  --border-subtle: rgba(255, 255, 255, 0.07);
+
+  --text-primary: #F4F6FA;
+  --text-secondary: #9AA3B5;
+  --text-muted: #687184;
+
+  --accent-primary: #5B7CFF;
+  --accent-secondary: #35D6E8;
+  --accent-subtle: #23345F;
+  --success-green: #25D366;
+
+  /* Architectural Gradient (strictly for primary CTA & select states) */
+  --gradient-architectural: linear-gradient(135deg, #5B7CFF 0%, #35D6E8 100%);
+  --gradient-card-top: linear-gradient(90deg, #5B7CFF 0%, #35D6E8 100%);
+
+  /* Typography: Single Modern Grotesk (Plus Jakarta Sans) */
+  --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Spacing: Strict 8px Grid */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --space-32: 128px;
+  --space-40: 160px;
+
+  /* Corner Radii */
+  --radius-sm: 8px;
+  --radius-btn: 11px;
+  --radius-card: 18px;
+  --radius-pill: 9999px;
+
+  /* Controlled Easing & Timing */
+  --ease-calm: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 0.2s;
+  --duration-normal: 0.35s;
+
+  /* Refined Elevation Shadow */
+  --shadow-card: 0 20px 60px rgba(0, 0, 0, 0.35);
+  --shadow-elevated: 0 30px 80px rgba(0, 0, 0, 0.5);
+  --shadow-btn: 0 4px 20px rgba(91, 124, 255, 0.25);
+}
