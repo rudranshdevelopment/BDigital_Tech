@@ -9,9 +9,12 @@ router.post('/track', async (req, res) => {
     const userAgent = req.headers['user-agent'] || 'Unknown';
     const ip = req.ip || req.connection.remoteAddress || 'Unknown';
 
+    const VALID_LOCATIONS = ['floating_button', 'hero_cta', 'service_card', 'final_cta', 'navbar'];
+    const safeLocation = VALID_LOCATIONS.includes(triggerLocation) ? triggerLocation : 'floating_button';
+
     const lead = new WhatsAppLead({
       service: service || 'General Consultation',
-      triggerLocation: triggerLocation || 'floating_button',
+      triggerLocation: safeLocation,
       customMessage: customMessage || '',
       userAgent,
       ip,
