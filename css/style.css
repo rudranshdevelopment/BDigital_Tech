@@ -122,17 +122,31 @@ h1, h2, h3, h4 {
 }
 
 .hud-brand {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 10px;
   text-decoration: none;
   background: rgba(13, 16, 28, 0.72);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 9999px;
-  padding: 5px 16px 5px 6px;
+  padding: 3px 18px;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  width: fit-content;
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+
+.hud-brand:hover {
+  border-color: rgba(255, 255, 255, 0.22);
+  background: rgba(18, 22, 38, 0.85);
+}
+
+.hud-brand-logo-img {
+  height: 42px;
+  width: auto;
+  max-width: 180px;
+  display: block;
+  object-fit: contain;
 }
 
 .hud-logo-icon {

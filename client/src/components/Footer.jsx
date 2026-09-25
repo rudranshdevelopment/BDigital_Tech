@@ -7,15 +7,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 mb-12">
         {/* Brand & Description */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <a href="#" className="flex items-center gap-3 mb-3">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-400 to-violet-600 p-[1px]">
-              <div className="w-full h-full bg-[#05050A] rounded-[7px] flex items-center justify-center font-display font-bold text-sm text-cyan-300">
-                B
-              </div>
-            </div>
-            <span className="font-display font-bold text-lg text-white">
-              BDigital <span className="text-violet-400 font-normal">Tech</span>
-            </span>
+          <a href="#" className="flex items-center mb-3 py-1" aria-label="BDigital Tech">
+            <img src="/bdigital-tech-logo.png" alt="BDigital Tech" className="h-10 w-auto object-contain" />
           </a>
           <p className="text-xs text-gray-400 max-w-sm">
             Proprietary enterprise CRM, ERP, HRMS, and automated cloud platforms engineered for continuous global performance.

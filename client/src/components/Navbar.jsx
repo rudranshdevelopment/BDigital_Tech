@@ -26,18 +26,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         
         {/* Brand Logo */}
-        <a href="#" className="flex items-center gap-3 group" data-cursor-hover>
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400 to-violet-600 p-[1px] shadow-[0_0_15px_rgba(34,211,238,0.3)] group-hover:shadow-[0_0_25px_rgba(139,92,246,0.6)] transition-all">
-            <div className="w-full h-full bg-[#05050A] rounded-[11px] flex items-center justify-center font-display font-bold text-lg text-cyan-300">
-              B
-            </div>
-          </div>
-          <div className="flex flex-col">
-            <span className="font-display font-bold text-lg tracking-tight text-white group-hover:text-cyan-300 transition-colors">
-              BDigital <span className="text-violet-400 font-normal">Tech</span>
-            </span>
-            <span className="text-[10px] font-mono tracking-widest text-cyan-400/70 uppercase">Enterprise Architect</span>
-          </div>
+        <a href="#" className="flex items-center group py-1" data-cursor-hover aria-label="BDigital Tech">
+          <img src="/bdigital-tech-logo.png" alt="BDigital Tech" className="h-10 w-auto object-contain transition-transform duration-200 group-hover:scale-105" />
         </a>
 
         {/* Desktop Nav Links */}
