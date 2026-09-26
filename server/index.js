@@ -3,15 +3,16 @@ const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
 const compression = require('compression');
+const fs = require('fs');
 const path = require('path');
 const { connectDB } = require('./db');
 const { seedDatabase } = require('./seed');
 
 const app = express();
-const PORT = parseInt(process.env.PORT, 10) || (process.env.NODE_ENV === 'production' ? 80 : 5000);
+const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 5000;
 const HOST = process.env.HOST || '0.0.0.0';
 
-// Trust reverse proxy (Coolify / Traefik / Nginx) for accurate client IPs and HTTPS detection
+// Trust reverse proxy (Coolify / Traefik / Nginx / Render / Cloudflare)
 app.set('trust proxy', 1);
 
 // Disable x-powered-by header for security
@@ -31,7 +32,10 @@ app.use('/api/health', require('./routes/health'));
 
 // Serve Static Frontend with caching for static assets
 const rootPath = path.join(__dirname, '..');
-app.use(express.static(rootPath, {
+const clientDistPath = path.join(rootPath, 'client', 'dist');
+const staticPath = fs.existsSync(path.join(clientDistPath, 'index.html')) ? clientDistPath : rootPath;
+
+app.use(express.static(staticPath, {
   maxAge: process.env.NODE_ENV === 'production' ? '7d' : 0,
   etag: true,
   lastModified: true
@@ -45,7 +49,10 @@ app.use('/api/*', (req, res) => {
 // SPA routing: send index.html for all other GET requests (e.g. /services, /contact)
 app.get('*', (req, res) => {
   res.setHeader('Cache-Control', 'no-cache');
-  res.sendFile(path.join(rootPath, 'index.html'));
+  const indexPath = fs.existsSync(path.join(clientDistPath, 'index.html'))
+    ? path.join(clientDistPath, 'index.html')
+    : path.join(rootPath, 'index.html');
+  res.sendFile(indexPath);
 });
 
 // Global error handler
